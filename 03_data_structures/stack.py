@@ -1,5 +1,11 @@
 """
 Stack - Last in, First Out(LIFO) data structure
+Think of it like plates piled up:
+- You can only add to the top (push)
+- You can only remove from the top (pop)
+- You can only look at the top (peek)
+- Last plate in = first plate out (lifo)
+Real world example: Ctrl+z undo button in any software
 """
 
 class Stack:
