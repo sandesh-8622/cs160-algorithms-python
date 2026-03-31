@@ -19,9 +19,11 @@ class Deque:
     
     def add_front(self, item):
         """Add item to the front of the deque."""
+        self.items.insert(0, item)  # this line was missing on my error code
 
     def add_rear(self, item):
         """Add item to the back of the deque"""
+        self.items.append(item)   # this line was missing on my error code
 
     def remove_front(self):
         """Remove and return item from the front."""
@@ -31,11 +33,11 @@ class Deque:
     
     def remove_rear(self):
         """Remove and return item from the back."""
-        if self_is.empty():
+        if self.is_empty():
             raise IndexError("remove from empty deque")
-        return len(self.items) == 0
+        return self.items.pop()
     
-    def size(self):
+    def is_empty(self):
         """Return True if deque has no items."""
         return len(self.items) == 0
     
@@ -44,4 +46,19 @@ class Deque:
         return len(self.items)
     
     def __str__(self):
-        return f"deque(front -> back): {self.items}"
+        return f"Deque (front -> back): {self.items}"
+    
+if __name__ == "__main__":
+        d = Deque()
+
+        print("Empty?", d.is_empty())  # True
+
+        d.add_rear("bob")
+        d.add_rear("charlie")
+        d.add_front("alice")
+        print(d)
+
+        print("Remove front:", d.remove_front())  # alice
+        print("Remove rear:", d.remove_rear())  # charlie
+        print(d)  # ['bob']
+        print("size", d.size())  # 1
