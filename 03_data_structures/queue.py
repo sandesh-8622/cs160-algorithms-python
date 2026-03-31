@@ -1,17 +1,39 @@
 """
-Queue - First in, First Out(FIFO) data structure
-Think of it like a McDonald's line:
--First person in line gets served first
-- New people join at the BACK
-- people leave from the FRONT
-- First In First Out (FIFO)
+Queue - First In, First Out (FIFO) data structure
 
-Real world examples:
--Mc Donald's line
--Printer queue (first document sent = first printed)
--Customer service calls (first caller = first served)
+What I have learned so far:
 
-self.items = [] = the empty line, nobody in it yet"""
+FIFO = First In First Out
+Like a McDonald's line - first person in line gets served first.
+
+enqueue() = add to the BACK of the line (new person joins)
+dequeue() = remove from the FRONT of the line (first person served)
+peek()    = just LOOK at the front person, they don't leave
+is_empty() = is the line empty?
+size()    = how many people in the line?
+
+positions in a list start from 0:
+["alice", "bob", "charlie"]
+    0        1        2
+
+pop(0)    = remove from front (dequeue uses this)
+pop()     = remove from back (stack uses this)
+items[0]  = look at front without removing (peek uses this)
+items[-1] = look at back without removing (stack peek uses this)
+
+---> here when learning difference between Stack and Queue,
+Stack = LIFO = plates piled up = remove from TOP
+for eg, in stack of plates the last plate that is kept is first out but dont mistak in python code as
+1
+2
+3
+4
+5
+here the stack of plate is 5 not one as it looks as stack of plate but, 
+5 because it came at the very last.
+Queue = FIFO = McDonald's/coffee counter line = remove from FRONT
+for eg, someone who comes to the lines first gets their first turn 
+"""
 
 class Queue:
     def __init__(self):
