@@ -28,3 +28,21 @@ class LinkedList:
         while current.next:    # until the last node
             current = current.next  # move to next node
         current.next = new_node  # attach a new node at the end
+
+    def __str__(self):
+        """Print the linked list as a chain."""
+        result = []
+        current = self.head
+        while current:
+            result.append(str(current.data))
+            current = current.next
+        return " -> ".join(result) + " -> None"
+
+# here is an example usage
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    ll.append(5)
+    ll.append(10)
+    ll.append(15)
+    print(ll)
