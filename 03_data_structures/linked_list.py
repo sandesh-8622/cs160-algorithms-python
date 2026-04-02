@@ -29,6 +29,13 @@ class LinkedList:
             current = current.next  # move to next node
         current.next = new_node  # attach a new node at the end
 
+    def prepend(self, data):
+        """ Add a new node to the front of the list."""
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+        
     def __str__(self):
         """Print the linked list as a chain."""
         result = []
@@ -38,11 +45,11 @@ class LinkedList:
             current = current.next
         return " -> ".join(result) + " -> None"
 
-# here is an example usage
-
+# here lets take a example usage to test this
 if __name__ == "__main__":
     ll = LinkedList()
     ll.append(5)
     ll.append(10)
     ll.append(15)
+    ll.prepend(1)
     print(ll)
