@@ -32,7 +32,7 @@ class LinkedList:
     def prepend(self, data):
         """ Add a new node to the front of the list."""
         new_node = Node(data)
-        new_node.next = self.head
+        new_node.next = self.heads
         self.head = new_node
 
         
