@@ -13,7 +13,7 @@ Course: CS160 (Data Structure and Algorithm)
 - [x] Stack (LIFO) --> last in first out, like a pile of plates
 - [x] Queue (FIFO) --> first in first out, like a coffee brew line
 - [ ] Deque
-- [ ] Linked List
+- [x] Linked List
 - [ ] Recursion
 - [ ] Trees
 - [ ] Sorting and Searching
