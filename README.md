@@ -15,6 +15,7 @@ Course: CS160 (Data Structure and Algorithm)
 - [ ] Deque
 - [x] Linked List
 - [ ] Recursion
+- [x] Big O notation
 - [ ] Trees
 - [ ] Sorting and Searching
 - [ ] Graphs
