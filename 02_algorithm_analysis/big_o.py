@@ -33,8 +33,26 @@ def find_duplicates(items):
                 return True
     return False
 
+# O(log n) --> logarithmic time
+# cuts the problem in HALF  each time
+# like opening dictionary to the middle, then half again
+
+def binary_search(items, target):
+    low = 0
+    high = len(items) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if items[mid] == target:
+            return True
+        elif items[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return False
 if __name__ == "__main__":
     numbers = [1, 2, 3, 4, 5]
     print(get_first(numbers))           # O(1)
     print(find_item(numbers, 3))        # O(n)
     print(find_duplicates(numbers))     # O(n^2)
+    print(binary_search(numbers, 3))    # O(log n) --> True
+    print(binary_search(numbers, 99))   # O(log n) --> False
