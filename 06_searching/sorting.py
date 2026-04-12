@@ -10,15 +10,41 @@ float to the top of water.
 It works by comparing two neighbors at a time and swapping them if they're in the wrong order
 
 """
-
 def bubble_sort(items):
     n = len(items)
     for i in range(n):
-        for j in range(n -1 - i):
+        for j in range(n - 1 - i):
             if items[j] > items[j + 1]:
                 items[j], items[j + 1] = items[j + 1], items[j]
     return items
-    
+
+
+def selection_sort(items):
+    """Find smallest item, put it at front, repeat. O(n^2)"""
+    n = len(items)
+    for i in range(n):
+        min_idx = i
+        for j in range(i + 1, n):
+            if items[j] < items[min_idx]:
+                min_idx = j
+        # swap AFTER finding min
+        items[i], items[min_idx] = items[min_idx], items[i]
+    return items
+
+
+def insertion_sort(items):
+    """Pick each item, insert it in correct position. O(n^2)"""
+    for i in range(1, len(items)):
+        current = items[i]
+        j = i - 1
+        while j >= 0 and items[j] > current:
+            items[j + 1] = items[j]
+            j -= 1
+        items[j + 1] = current
+    return items
+
+
 if __name__ == "__main__":
-    numbers = [5, 3, 8, 1, 4]
-    print(bubble_sort(numbers))
+    print(bubble_sort([5, 3, 8, 1, 4]))
+    print(selection_sort([5, 3, 8, 1, 4]))
+    print(insertion_sort([5, 3, 8, 1, 4]))
