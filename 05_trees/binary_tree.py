@@ -46,3 +46,20 @@ class BinaryTree:
                 node.right = TreeNode(data)
             else:
                 self._insert(node.right, data)
+
+    def inorder(self, node, result=[]):
+        """left, root right --> gives sorted order"""
+        if node:
+            self.inorder(node.left, result)
+            result.append(node.data)
+            self.inorder(node.right, result)
+        return result
+    
+if __name__ == "__main__":
+    bt = BinaryTree()
+    bt.insert(5)
+    bt.insert(3)
+    bt.insert(8)
+    bt.insert(1)
+    bt.insert(4)
+    print(bt.inorder(bt.root, []))
