@@ -43,8 +43,32 @@ def insertion_sort(items):
         items[j + 1] = current
     return items
 
+def merge_sort(items):
+    """Split in half, sort each half, merge-->O(n log n)"""
+    if len(items) <= 1:
+        return items
+    mid = len(items) // 2
+    left = merge_sort(items[:mid])
+    right = merge_sort(items[mid:])
+    return merge(left, right)
+
+def merge(left, right):
+    """Merge two sorted lists into one."""
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
 
 if __name__ == "__main__":
     print(bubble_sort([5, 3, 8, 1, 4]))
     print(selection_sort([5, 3, 8, 1, 4]))
     print(insertion_sort([5, 3, 8, 1, 4]))
+    print(merge_sort([5, 3, 8, 1, 4]))
