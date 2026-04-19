@@ -67,8 +67,18 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 
+def quick_sort(items):
+    """pick pivot, split smaller/bigger, recurse. O(nlog n)"""
+    if len(items) <= 1:
+        return items
+    pivot = items[-1]
+    smaller = [x for x in items[:-1] if x <= pivot]
+    bigger = [x for x in items[:-1] if x > pivot]
+    return quick_sort(smaller) + [pivot] + quick_sort(bigger)
+
 if __name__ == "__main__":
     print(bubble_sort([5, 3, 8, 1, 4]))
     print(selection_sort([5, 3, 8, 1, 4]))
     print(insertion_sort([5, 3, 8, 1, 4]))
     print(merge_sort([5, 3, 8, 1, 4]))
+    print(quick_sort([5, 3, 8, 1,4]))
