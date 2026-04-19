@@ -18,5 +18,5 @@ Course: CS160 (Data Structure and Algorithm)
 - [x] Big O Notation --> measuring algorithm speed, O(1) O(n) O(n²) O(log n)
 - [x] Binary Tree --> each node has left and right child
 - [x] Sorting Algorithms --> bubble, selection, insertion, merge, quick
+- [x] Graphs --> BFS (level by level) and DFS (deep first)
 - [ ] Searching and Hashing
-- [ ] Graphs
