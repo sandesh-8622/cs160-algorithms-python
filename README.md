@@ -11,11 +11,12 @@ Course: CS160 (Data Structure and Algorithm)
 ## Progress
 
 - [x] Stack (LIFO) --> last in first out, like a pile of plates
-- [x] Queue (FIFO) --> first in first out, like a coffee brew line
-- [ ] Deque
-- [x] Linked List
-- [ ] Recursion
-- [x] Big O notation
-- [ ] Trees
-- [ ] Sorting and Searching
+- [x] Queue (FIFO) --> first in first out, like a McDonald's line
+- [x] Deque --> double ended queue, add/remove from both ends
+- [x] Linked List --> chain of nodes, each pointing to the next
+- [x] Recursion --> function that calls itself, countdown/factorial/fibonacci
+- [x] Big O Notation --> measuring algorithm speed, O(1) O(n) O(n²) O(log n)
+- [x] Binary Tree --> each node has left and right child
+- [x] Sorting Algorithms --> bubble, selection, insertion, merge, quick
+- [ ] Searching and Hashing
 - [ ] Graphs
