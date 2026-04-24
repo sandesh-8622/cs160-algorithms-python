@@ -21,6 +21,12 @@ Course: CS160 (Data Structure and Algorithm)
 - [x] Graphs --> BFS (level by level) and DFS (deep first)
 - [x] Searching and Hashing --> O(1) lookup using hash functions
 
+## Study Notes
+
+- [x] python_basics.py --> print, variables, math, loops, lists, functions, dictionaries, classes
+- [x] dsa_definitions.py --> stack, queue, deque, linked list, trees, sorting, searching, graphs, recursion
+- [x] python_revision_2.py --> classes, while loops, error handling, f-strings, recursion, trees
+
 ## Revision Notes
 
 - [x] Revision 1 --> Python basics, loops, functions, lists, dictionaries
