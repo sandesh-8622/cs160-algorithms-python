@@ -20,3 +20,8 @@ Course: CS160 (Data Structure and Algorithm)
 - [x] Sorting Algorithms --> bubble, selection, insertion, merge, quick
 - [x] Graphs --> BFS (level by level) and DFS (deep first)
 - [x] Searching and Hashing --> O(1) lookup using hash functions
+
+## Revision Notes
+
+- [x] Revision 1 --> Python basics, loops, functions, lists, dictionaries
+- [x] Revision 2 --> Classes, while loops, error handling, f-strings, recursion, trees
