@@ -1,7 +1,6 @@
 """
 Python Basics Revision
-Sandesh Bhandari, Luther College
-Written the way I actually understand things
+Sandesh Bhandari
 
 
 PRINT AND VARIABLES
