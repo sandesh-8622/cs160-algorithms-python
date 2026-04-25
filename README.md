@@ -31,3 +31,4 @@ Course: CS160 (Data Structure and Algorithm)
 
 - [x] Revision 1 --> Python basics, loops, functions, lists, dictionaries
 - [x] Revision 2 --> Classes, while loops, error handling, f-strings, recursion, trees
+- [x] exam_prep_revision.py --> recursion 3 laws, hashing + quadratic probing, inheritance, string methods, list methods
