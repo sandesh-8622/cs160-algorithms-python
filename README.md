@@ -23,13 +23,12 @@ Course: CS160 (Data Structure and Algorithm)
 
 ## Study Notes
 
-- [x] python_basics.py --> print, variables, math, loops, lists, functions, dictionaries, classes
-- [x] dsa_definitions.py --> stack, queue, deque, linked list, trees, sorting, searching, graphs, recursion
-- [x] python_revision_2.py --> classes, while loops, error handling, f-strings, recursion, trees
+- [x] dsa_definitions.py --> all DSA definitions and concepts
 
 ## Revision Notes
 
-- [x] Revision 1 --> Python basics, loops, functions, lists, dictionaries
-- [x] Revision 2 --> Classes, while loops, error handling, f-strings, recursion, trees
-- [x] exam_prep_revision.py --> recursion 3 laws, hashing + quadratic probing, inheritance, string methods, list methods
-- [x] exam_revision1 ---> revision with recursion, hashing, binary search, sorting, tree traversal, inheritance
+- [x] revision1-python-basics.py --> print, variables, math, loops, lists, functions, dictionaries, classes
+- [x] revision2-classes-oop.py --> classes, while loops, error handling, f-strings, string and list methods
+- [x] revision3-exam-topics.py --> recursion laws, hashing, binary search, sorting, tree traversal
+- [x] revision4-exam-prep.py --> recursion 3 laws, hashing, inheritance, string methods, list methods
+- [x] revision5-heaps-bst.py --> heaps, BST insert/delete, tree height, algorithm analysis trick
